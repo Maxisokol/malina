@@ -64,6 +64,9 @@ function HideAll(){
             
 }
   
+Highcharts.setOptions({
+    colors: ['#058DC7', '#50B432', '#ED561B', '#DDDF00', '#24CBE5', '#64E572', '#FF9655', '#FFF263', '#6AF9C4']
+});
       
       //  This is where the chart is generated.
 $(document).ready(function() 
@@ -329,6 +332,7 @@ $(document).ready(function()
 	//chartOptions.title.text = data.channel.name;
 	chartOptions.xAxis.title.text = 'Date';
 
+	 
 	// draw the chart
   dynamicChart = new Highcharts.StockChart(chartOptions);
 
