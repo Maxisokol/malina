@@ -254,12 +254,13 @@ $(document).ready(function()
 				//  column: {
 			},
 			series: {
+				connectNulls: true,
 			  marker: {
 				  radius: 2
 				},
 				animation: true,
 				step: false,
-        turboThrehold:1000,
+				turboThrehold:1000,
 				borderWidth: 0
 			}
 		},
@@ -339,7 +340,7 @@ $(document).ready(function()
         //    connectNulls: true
         //}
     	//}
-	chartOptions.series.connectNulls = true;
+	//chartOptions.series.connectNulls = true;
 	 
 	 
 	// draw the chart
